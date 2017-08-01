@@ -1,0 +1,26 @@
+<ion-view view-title={{name}} ng-controller="summer">
+  <ion-content class="summer">
+    <div ng-class="{left:true}">
+		<div ng-repeat="data in leftsrc">
+			<a  href="#/homepage/summer/yuding">
+				<img ng-src={{data.src}} class="shang"/>
+				<p>{{data.name}}</p>
+				<img ng-src="../images/summer/guanzhu.png"/>
+				<span>{{data.num}}</span>
+				<img ng-src={{data.src1}} class="add"/>
+			</a>
+		</div>
+	</div>
+	<div  ng-class="{right:true}">
+		<div ng-repeat="data in rightsrc">
+			<a  href="#/homepage/summer/yuding">
+				<img ng-src={{data.src}} class="shang"/>
+				<p>{{data.name}}</p>
+				<img ng-src="../images/summer/guanzhu.png"/>
+				<span>{{data.num}}</span>
+				<img ng-src={{data.src1}} class="add"/>
+			</a>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>

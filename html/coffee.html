@@ -1,0 +1,38 @@
+<ion-view view-title="咖啡茶点">
+	<div ng-class="{screen:true}">
+		<ul>
+			<li ng-repeat="data in sortList">
+				<p>{{data.name}}</p>
+				<i class="ion ion-ios-arrow-down"></i>
+			</li>
+		</ul>
+	</div>
+	<ion-content>
+		<div ng-class="{list:true}">
+			<div ng-class="{wrapper:true}">
+				<div ng-class="{left:true}">
+					<dl ng-repeat="data in dataLeft">
+							<a  href="#/homepage/summer/yuding">
+						<dt><img ng-src={{data.src}}/></dt>
+						<dd>
+							<p>{{data.text}}</p>
+							<p><i class="ion ion-ios-location-outline location"></i>{{data.site}}<i class="ion ion-star star"></i></p>
+						</dd>
+						</a>
+					</dl>
+				</div>
+				<div ng-class="{right:true}">
+					<dl ng-repeat="data in dataRight">
+							<a  href="#/homepage/summer/yuding">
+						<dt><img ng-src={{data.src}}/></dt>
+						<dd>
+							<p>{{data.text}}</p>
+							<p><i class="ion ion-ios-location-outline location"></i>{{data.site}}<i class="ion ion-star star"></i></p>
+						</dd>
+						</a>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,59 @@
+<ion-view view-title="关注|附近" >
+  <ion-content class="guanzhu" ng-controller="guanzhu">
+  	<div class="top">
+  		<h3>周围都在吃</h3>
+  		<div class="list">
+  			<img src="../images/guanzhu/p1.jpg" class="imgp"></img>
+  			<img src="../images/guanzhu/p2.jpg" class="imgp"></img>
+  			<img src="../images/guanzhu/p3.jpg" class="imgp"></img>
+  		</div>
+  	</div>
+  	<div class="one" ng-repeat="data in guanzhusrc">
+  		<img class="head" ng-src={{data.head}}></img>
+  		<div class="name">{{data.name}}</div>
+  		<div class="guan">关注</div>
+  		<div class='time'>{{data.time}}分钟前</div>
+  		<div class="intro">{{data.intro}}</div>
+  		<img class="img" ng-src={{data.src}}></img>
+  		<div class="where"><img src="../images/guanzhu/dingwei.png"/> 丹尼斯&nbsp;&nbsp;|&nbsp;&nbsp;>&nbsp;&nbsp;{{data.dis}}米&nbsp;&nbsp;|&nbsp;&nbsp;{{data.shopname}}</div>
+  		<div class="see"><img src="../images/guanzhu/guanzhu.png"/>&nbsp;&nbsp;{{data.numguanzhu}}<img src="../images/guanzhu/xiao3.png"/>{{data.num1}}<img src="../images/guanzhu/ku1.png"/>{{data.num2}}</div>
+  	</div>
+  </ion-content>
+</ion-view>
+</ion-content>
+	<ion-footer-bar class="ion-footer-bar">
+			<footer >
+				<a href="#/homepage">
+					<img src="../images/homepage/footer11.jpg"/>
+					<p>推荐</p>
+				</a>
+			</footer>
+			<footer >
+				<a href="#/sort">
+				<img src="../images/homepage/footer21.jpg"/>
+				<p>分类</p>
+				</a>
+			</footer>
+			<footer >
+				<img src="../images/homepage/footer31.jpg"/>
+				<p>摇摇乐</p>
+			</footer>
+			<footer >
+				<a href="#/homepage/guanzhu">
+					<img src="../images/homepage/footer42.jpg"/>
+					<p>圈圈</p>
+				</a>
+			</footer>
+			<footer>
+				<div ng-click="goMe()">
+				<img src="../images/homepage/footer51.jpg"/>
+				<p>我的</p>
+			</div>
+			</footer>
+	</ion-footer-bar>
+</ion-view>
+<!--<script type="text/javascript">
+	$(function(){
+		alert("ok")
+	})
+</script>-->

@@ -1,0 +1,157 @@
+body,html{height: 100%;overflow: hidden;}
+a{color: #000;}
+.bg{background-image: -webkit-linear-gradient(bottom,#fff,pink)!important;}
+.previous-title{display: none !important;}
+/*.back-text{line-height: 33px;}*/
+/*----------------------------------------------------------------------------------------------------*/
+.homepage{ width: 100%;}
+.homepage header{width: 100%;}
+.homepage header .top{width: 100%;background: url(../images/homepage/header1.jpg) no-repeat;background-size: 100%;height: 12rem;overflow: hidden;}
+.homepage header .top .start{width: 100%;font-size: 1.625rem;color:#fff;letter-spacing:2rem;text-align: center;margin-top: 0.75rem;padding-left:10%;box-sizing: border-box;}
+.homepage header .top .head{width: 70%;height: 3rem;border: 2px solid #fff; margin: 0.75rem auto;text-align: center;font-size: 1.625rem;line-height: 3rem;color: #fff;border-radius: 5px;letter-spacing: .25rem;font-weight:400;}
+.homepage header .top .food{width: 100%;text-align: center;color: #fff;}
+.homepage header .top img{margin:0.5rem auto;display: block;}
+.homepage header ul{width: 75%;overflow:hidden;margin-left: 12.5%;margin-top: .25rem;}
+.homepage header ul li{width:33%;float: left;text-align:center;}
+.homepage header ul li img{width: 50%;height: 2.25rem;}
+/*header ul li img:nth-of-type(2){width:90%;}*/
+.homepage header ul li p{font-size: .75rem;margin-top: .5rem;}
+.homepage .find{width: 100%;border-top:8px solid #f6f6f6;margin-top: 1rem;}
+.homepage .find .one{width: 100%;position:relative;overflow: hidden;}
+.homepage .find .four{width: 42.5%;margin-left:5%;height: 4.5rem;background-color: #f4f4f4;border-radius:5px ; position: relative;float: left;margin-bottom: .75rem;}
+.homepage .find .four p:nth-of-type(1){position: absolute;color: #8b8b8b;top:30%;left: 10%;font-size: 1rem;}
+.homepage .find .four p:nth-of-type(2){position: absolute;color: #dbdbdb;top:65%;left: 5%;font-size: 0.75rem;letter-spacing: .25rem;}
+.homepage .find .four img{position: absolute;right: 0;width: 35%;top: 15%;height: 3.5rem;}
+.homepage .hot{width: 100%;border-top:8px solid #f6f6f6;margin-top: 1rem;overflow:hidden;position: relative;}
+.homepage .hot p{width: 100%;text-align: center;margin-top: 1rem;position: relative;}
+.homepage .hot p:before{content:" ";width: 2rem;height:1px;background-color: #d8d8d8;position: absolute;top: 50%;left:25%;}
+.homepage .hot p:after{content:" ";width: 2rem;height:1px;background-color: #d8d8d8;position: absolute;top: 50%;right:25%;}
+.homepage .hot .circle{position: absolute;right:1rem;top:1.375rem;overflow: hidden;}
+.homepage .hot .circle span{width: 3px;height: 3px;border-radius:100% ;background-color:#cecece ;display:block;float: left;margin-left: 3px;}
+/*.homepage .hot .slider{height: 8rem;width: 100%;}*/
+.homepage .hot .swiper-container{width: 100%;-webkit-perspective: 1200px;perspective: 1200px;-webkit-transform-style: preserve-3d;transform-style: preserve-3d;position: relative;}
+.homepage .hot .swiper-wrapper{margin-top: 10px;width:43%!important;}
+.homepage .hot .swiper-slide{width:100%!important;height: 8.5rem}
+.homepage .hot .swiper-slide img{width: 80%;display: block;margin: 0 auto;height: 8rem;border-radius: 5px;}
+.homepage .hot .swiper-slide span{width: 60%;height: 5rem;display: block;border-radius: 5px;position: absolute;right: -3px;bottom:5px;opacity: .5;}
+.homepage .hot .swiper-slide .span1{background: #007AFF;box-shadow:5px 5px 3px #6641E2 ;}
+.homepage .hot .swiper-slide .span2{background: orangered;box-shadow:5px 5px 3px orange ;}
+.homepage .hot .swiper-slide .span3{background: #CF2D28;box-shadow:5px 5px 3px brown ;}
+.homepage .hot .swiper-slide .span4{background: blueviolet;box-shadow:5px 5px 3px blue ;}
+
+.hot .swiper-slide span h6:nth-of-type(1){width: 100%;text-align:center;color: #fff;font-weight: 600;margin-top: 1.5rem;letter-spacing: .125rem;font-size: 1rem;}
+.hot .swiper-slide span h6:nth-of-type(2){width: 100%;text-align:center;color: #fff;font-weight: 400;margin-top: .75rem;letter-spacing: .125rem;margin-left: .5rem;}
+.homepage .like{width: 100%;border-top:8px solid #f6f6f6;margin-top: 1rem;overflow:hidden;position:relative;clear: both;}
+.homepage .like p{width: 100%;text-align: center;margin-top: 1rem;position: relative;}
+.homepage .like p:before{content:" ";width: 2rem;height:1px;background-color: #d8d8d8;position: absolute;top: 50%;left:25%;}
+.homepage .like p:after{content:" ";width: 2rem;height:1px;background-color: #d8d8d8;position: absolute;top: 50%;right:25%;}
+.homepage .like .circle{position: absolute;right:1rem;top:1.375rem;overflow: hidden;}
+.homepage .like .circle span{width: 3px;height: 3px;border-radius:100% ;background-color:#cecece ;display:block;float: left;margin-left: 3px;}
+.homepage .like .swiper-container{width: 100%;position: relative;}
+.homepage .like .swiper-wrapper{margin-top: 10px;}
+.homepage.like .swiper-slide{width:100%;position:relative;height: 8.5rem;}
+.homepage .like .swiper-slide img{width: 100%;height:10rem;}
+.homepage .like .swiper-slide .bg{background: #000000!important;opacity: .3;width: 70%;display: block;height: 3.25rem;position: absolute;top: 2rem;left: 15%;}
+.homepage .like .swiper-slide .txt{width: 70%;display: block;height: 3.25rem;position: absolute;left: 15%;top:2rem;color: #fff;text-align: center;margin-top: .5rem;font-size: 1.25rem;line-height:2.25rem ;}
+.homepage .like .swiper-slide .txt:before{content:" ";width:50%;height: 1rem;position: absolute;border-bottom:1px solid #fff;border-left:1px solid #fff;left:2%;bottom:.75rem;}
+.homepage .like .swiper-slide .txt:after{content:" ";width:50%;height: 1rem;position: absolute;border-top:1px solid #fff;border-right:1px solid #fff;right:2%;top:-0.0625rem ;}
+footer{height: 3rem;text-align: center;margin-top: 0.5rem;position: relative;}
+footer img{width: 40%;height: 1.45rem;margin-top:-1.5rem;}
+footer p{font-size: .75rem;}
+/*-------------------------------------------------------------------------------------------------------*/
+.summer{width: 100%;border-top: 1px solid #ccc;}
+.summer .left{float: left;width:50%;border-right:1px solid #CCCCCC ;border-top: 1px solid #ccc;}
+.summer .left div{width: 100%;border-bottom: 1px solid #CCCCCC;position: relative;height:18rem;}
+.summer .left div .shang{width:90%;margin-top:.75rem ;margin-left: 5%;margin-bottom:0;height: 13rem;position: relative;}
+.summer .left div p{margin-left: 5%;margin-top: .75rem;}
+.summer .left div img{width:16px;margin-left: 5%;margin-bottom: 0.5rem;margin-top: -0.5rem;position: absolute;bottom: 0;}
+.summer .left div span{font-size: .75rem;display:block;position: absolute;left: 20%;bottom:0.625rem;}
+.summer .left div .add{position: absolute;bottom:.0rem;right:10%;width: 1.25rem;height: 1.25rem;}
+.summer .right{float:right;width:50%;border-top: 1px solid #ccc;box-sizing: border-box;}
+.summer .right div{width: 100%;border-bottom: 1px solid #CCCCCC;position: relative;height:19.5rem;}
+.summer .right div .shang{width:90%;margin-top:.75rem ;margin-left: 5%;margin-bottom:0;height: 14.5rem;position: relative;}
+.summer .right div p{margin-left: 5%;margin-top: .75rem;}
+.summer .right div img{width:16px;margin-left: 5%;margin-bottom: 0.5rem;margin-top: -0.5rem;position: absolute;bottom: 0;}
+
+.summer .right div span{font-size: .75rem;display:block;position: absolute;left: 20%;bottom:0.625rem;}
+.summer .right div .add{position: absolute;bottom:.0rem;right:10%;width: 1.25rem;height: 1.25rem;}
+/*----------------------------------------------------------------------------------------------*/
+.yuding{width: 100%;}
+.yuding .swiper-container{width: 100%;position: relative;}
+.yuding .pingjia{position: absolute;right: 0.5rem;z-index: 3;bottom: .5rem;}
+.yuding .pingjia img{width: .75rem;margin-left: .125rem;/*position: absolute;z-index: 10;*/}
+.yuding .middle{width: 100%;position: relative;border-bottom: 5px solid #F6F6F6;height:9.25rem;}
+.yuding .middle ul{width: 70%;left: 15%;position: absolute;top:.5rem}
+.yuding .middle ul li{height: 1.5rem; line-height: 1.5rem;font-size: .75rem;float: left;padding:0 0.25rem;}
+.yuding .middle ul li img{width: 1.25rem;height: 1.25rem;float: left;margin-right: .25rem;}
+.yuding .middle .every{width: 80%;position: absolute;left:7%;top: 3rem;font-size: .75rem;}
+.yuding .middle .every span{margin-left: 1rem;}
+.yuding .middle .yu{width:5rem;height: 2.25rem;position: absolute;right: 5%;background: #f66f76;line-height: 2.5rem;text-align: center;top: 2.25rem;border-radius: 5px;color: #fff;}
+.yuding .middle .yus{width: 100%;position: absolute;height: 36rem;background: #000;z-index: 3;top: 4.75rem;opacity: .8;overflow: hidden;}
+/*.yuding .middle .yus.ng-hide-remove{opacity: 0;}
+.yuding .middle .yus.ng-hide-remove-active{opacity: 1;}
+.yuding .middle .yus.ng-hide-add{opacity: 1;}
+.yuding .middle .yus.ng-hide-add-active{opacity: 0;}
+.yuding .middle .yuss.ng-hide-remove{opacity: 0;}
+.yuding .middle .yuss.ng-hide-remove-active{opacity: 1;}
+.yuding .middle .yuss.ng-hide-add{opacity: 1;}
+.yuding .middle .yuss.ng-hide-add-active{opacity: 0;}*/
+
+.yuding .middle .yuss{width: 100%;position: absolute;height: 36rem;z-index: 3;top: 4.75rem;color:orangered;overflow: hidden;}
+.yuding .middle .yuss .time{width: 100%;border-bottom: 1px solid #ccc;border-bottom: 1px solid #ccc;overflow: hidden;margin-bottom: 1rem;}
+.yuding .middle .yuss h2{color:orangered;font-size: 1rem;margin: 1rem;}
+.yuding .middle .yuss .time h3{color:orangered;font-size: 1rem;margin: 1rem;}
+.yuding .middle .yuss .time span{width:25%;float: left;display: block;line-height: 2rem;border: 1px solid greenyellow;margin-left: 5%;margin-bottom:1rem;text-align: center;border-radius: 5px;}
+.yuding .middle .yuss .people{width: 100%;border-bottom: 1px solid #ccc;border-bottom: 1px solid #ccc;overflow: hidden;margin-bottom: 1rem;}
+.yuding .middle .yuss .people h3{color:orangered;font-size: 1rem;margin: 1rem;}
+.yuding .middle .yuss .people span{width: 23%;float: left;display: block;line-height: 2rem;border: 1px solid greenyellow;margin-left: 5%;margin-bottom:1rem;text-align: center;border-radius: 5px;}
+.yuding .middle .yuss .how{width: 100%;border-bottom: 1px solid #ccc;border-bottom: 1px solid #ccc;overflow: hidden;margin-bottom: 1rem;}
+.yuding .middle .yuss .how h3{color:orangered;font-size: 1rem;margin: 1rem;}
+.yuding .middle .yuss .how span{width: 40%;float: left;display: block;line-height: 2rem;border: 1px solid greenyellow;margin-left: 5%;margin-bottom:1rem;text-align: center;border-radius: 5px;}
+.yuding .middle .yuss .how span input{margin-right: .25rem;}
+.yuding .middle .where{width: 95%;left:2.5%;font-size: .75rem;top:5rem;position: absolute;line-height: 2rem;border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;}
+.yuding .middle .where img{width: 1rem;height: 1rem;float: left;margin-right: .5rem;margin-top: .5rem;}
+.yuding .middle .where .right{position: absolute;right:0;margin-right:0}
+.yuding .middle .phone{width: 95%;left:2.5%;font-size: .75rem;top:7rem;position: absolute;line-height: 2rem;}
+.yuding .middle .phone img{width: 1rem;height: 1rem;float: left;margin-right: .5rem;margin-top: .5rem;}
+.yuding .middle .phone .right{position: absolute;right:0;margin-right:0}
+.yuding .why{width: 100%;height: 5rem;}
+.yuding .why h3{width: 90%;margin-left: 2.5%;font-size: 1rem;margin-top: .5rem;font-weight: 700;}
+.yuding .why h3 img{width: 1.25rem;height: 1.25rem;margin-right:.5rem;float: left;}
+.yuding .why p{width: 80%;margin-left:7%;font-size: .75rem;line-height: 1.125rem;}
+.yuding .caidan{width: 100%;border-top: 5px solid #F6F6F6 ;}
+.yuding .caidan .search{width: 90%;margin-left: 7%;margin-top: .5rem;font-size: .75rem;line-height: 1rem;}
+.yuding .caidan .search img{width: 1rem;height: 1rem;float: left;margin-right: 1rem;}
+.yuding .caidan .all{width: 100%;border-radius: 5px;background-color:#F6F6F6;margin-top: .5rem;overflow:hidden ;}
+.yuding .caidan .all .one{width: 90%;margin-left: 5%;height:9rem;background-color: #fff;margin-top:1rem;position: relative;box-shadow: 5px 5px 3px #666;border-radius: 5px;margin-bottom:1rem ;}
+.yuding .caidan .all .one .eone{width: 40%;height: 7.5rem;position: absolute;top: .5rem;left: 2%;}
+.yuding .caidan .all .one .pai{width: 1.5rem;height: 3rem;position: absolute;right:.125rem;top.125rem}
+.yuding .caidan .all .one h3{font-size: 1rem;left: 50%;position: absolute;width:36%;white-space:nowrap ;overflow: hidden;text-overflow: ellipsis;}
+.yuding .caidan .all .one h4{font-size: 1rem;left: 50%;position: absolute;top:2.25rem}
+.yuding .caidan .all .one p{width: 50%;height: 2rem;position: absolute;right: 5%;bottom:0rem;border:1px solid #ccc ;border-radius: 5px;}
+.yuding .caidan .all .one p span{width: 25%;height:1.875rem;display: block;float: left;line-height: 2rem;text-align: center;border-right: 1px solid #ccc;}
+.yuding .caidan .all .one p span:nth-of-type(1){font-size: 1.5rem;color: orange;}
+.yuding .caidan .all .one p span:nth-of-type(4){border-right:none;}
+.yuding .caidan .all .one p span:nth-of-type(4) img{width: 1.25rem;height: 1.25rem;margin-top: 0.375rem;}
+.yufooter{width: 33%;text-align: center;font-size: .75rem;}
+.yufooter img{ width: 1.25rem;height: 1.25rem;}
+/*-----------------------------------------------*/
+.guanzhu{width: 100%;}
+.guanzhu .top{width: 100%;height:13rem;border-bottom: 5px solid #ccc;border-top: 1px solid #CECECE;}
+.guanzhu .top h3{font-size: 1rem;margin: 5%;font-size: .75rem;}
+.guanzhu .top .list{width: 100%;height: 9rem;}
+.guanzhu .top .list .imgp{width:32%;margin-left: 1%;float: left;height: 9rem;}
+.guanzhu .one{width: 100%;height: 20rem;border-bottom: 1px solid #D8D8D8;overflow: hidden;position: relative;border-bottom: 1px solid #ccc;}
+.guanzhu .one .head{width: 3.5rem;height: 3.5rem;margin-left:5% ;margin-top: .5rem;border-radius: 100%;}
+.guanzhu .one .name{position: absolute;width:3rem ;line-height:1.5rem;position: absolute;top: .75rem;left:27%;}
+.guanzhu .one .time{position: absolute ;position: absolute;top: 2.75rem;left:27%;font-size: .75rem;}
+.guanzhu .one .guan{width:4rem;height: 2rem;border: 1px solid orangered;text-align: center;line-height: 2rem;border-radius: 5px;position: absolute;right:1rem;top: .75rem;}
+.guanzhu .one .intro{width: 90%;left: 5%;top: 4.5rem;position: absolute;font-size: 0.875rem;line-height: 1rem;}
+.guanzhu .one .img{width: 90%;height: 9rem;position: absolute;top: 7rem;left: 5%;}
+.guanzhu .one .where{width: 90%;position: absolute;left: 7.5%;top: 16.5rem;font-size: .75rem;color: #666666;}
+.guanzhu .one .where img{width:0.75rem;height: 0.75rem;float:left;margin-right: .25rem;}
+.guanzhu .one .see{position: absolute;left: 7.5%;width: 87.5%;top: 18.5rem;font-size: .75rem;}
+.guanzhu .one .see img:nth-of-type(1){width:0.75rem;height: 0.75rem;float: left;}
+.guanzhu .one .see img:nth-of-type(2){width:0.75rem;height: 0.75rem;margin-left: 8rem;margin-right: .5rem;}
+.guanzhu .one .see img:nth-of-type(3){width:0.75rem;height: 0.75rem;margin-left: 1.5rem;margin-right: .5rem;}
+/*----------------------------------------------------------------------------*/

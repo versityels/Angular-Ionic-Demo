@@ -1,0 +1,17 @@
+<ion-view view-title="登录">
+	<div ng-class="{O_register:true}">
+		<img ng-src="../images/mine/bg.png" ng-class="{bg:true}"/>
+		<div ng-class="{wrapper:true}">
+			<label class="item item-input" ng-class="{ipt1:true}">
+				<i class="icon ion-person placeholder-icon"></i>
+				<input type="text" ng-model="login_user" placeholder="username">
+			</label>
+			<label class="item item-input" ng-class="{ipt:true}">
+				<i class="icon ion-locked placeholder-icon"></i>
+				<input type="password" ng-model="login_psd" placeholder="password">
+			</label>
+			<button class="button button-assertive" ng-class="{btn:true}" ng-click="goMine()">Next</button>
+			<button class="button button-assertive" ng-class="{btn:true}" ng-click="goRegister()">Register</button>
+		</div>
+	</div>
+</ion-view>

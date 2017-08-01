@@ -1,0 +1,74 @@
+/*.head{ background-color: #fff !important; color:#ccc !important;}*/
+body,html{height:100%;}
+.O_sort{width:100%; margin-top: 2.2rem;}
+.search{width:100%; height:2.2rem; position: fixed; top:2.75rem;}
+.search .text{width:80%; margin-top: 0.3rem; margin-left: 10%;}
+.search .text input{width:100%; height:1.6rem !important; line-height: 1.6rem; background-color: #F2F2F2; border-radius: 0.5rem; padding-left: 1rem;}
+.O_sort .wrapper{ width:100%; background-color: #F2F2F2; position: relative;}
+.O_sort .wrapper .list1{width:22%; height:5rem; border-bottom:1px solid #F2F2F2; background-color: #fff; position: relative; overflow: hidden;}
+.O_sort .wrapper .list1 p{ font-size: 0.8rem !important; margin-top: 3.8rem; text-align: center; color:#000;}
+.O_sort .wrapper .size{ width:2.6rem; height:2.6rem; position: absolute; top:0.5rem; left:50%; margin-left: -1.3rem;}
+
+.O_sort .wrapper .right{width:78%; position: absolute; top:0; left: 22%;}
+.O_sort .wrapper .right ul{ overflow: hidden;}
+.O_sort .wrapper .right ul li{float: left; margin: 4% 0 0 4%; width:28%; height:2.5rem; background-color: #fff; text-align: center; line-height: 2.5rem; border-radius: 0.5rem;}
+
+.search .src{width:80%; z-index: 99; position: absolute; top:2rem; left: 10%; background-color: #fff;}
+.search .src li{ line-height: 1.5rem; border-bottom: 1px solid #F2F2F2; padding-left: 1rem;}
+.search .src li:nth-of-type(10){ border: none;}
+/*.src li:nth-of-type(2n){ background-color: #;}*/
+
+footer{height: 3rem;text-align: center;margin-top: 0.5rem;position: relative;}
+footer img{width: 40%;height: 1.45rem;margin-top:-1.5rem;}
+footer p{font-size: .75rem;}
+
+.bar .buttons span {display: inline-block;margin-top: 0.25rem;}
+
+
+
+
+.O_register{ width:100%; height:100%; position: absolute; top:2.7rem;}
+.O_register .scroll{ width:100%; height:100%;}
+.O_register .bg{ width:100%; height:100%;}
+.O_register .wrapper{width:84%; height:57%; position: absolute; left:8%; top:30%; background-color: #fff; border-radius: 1rem;}
+.O_register .wrapper .ipt{font-size: 1.2rem; width:70%; height:2rem; margin: 2rem 0 0 3rem; border:none; border-bottom:1px solid #F2F2F2;}
+.O_register .wrapper .ipt1{font-size: 1.2rem; width:70%; height:2rem; margin: 3rem 0 0 3rem; border:none; border-bottom:1px solid #F2F2F2;}
+.O_register .wrapper .btn{ width:60%; height:2rem; margin: 2rem 0 0 20%;}
+
+
+.O_mine{width:100%; height:100%; position: absolute; top:2.7rem; background-color: #F2F2F2;}
+.O_mine .data{ width:100;height:43%; background-image: url(../images/mine/mine_bg.png); background-size: 100% 100%;}
+.O_mine .mySort{ margin-top: 0.7rem; background-color: #fff;}
+.O_mine .detail{ height:2.2rem; line-height: 2.2rem;}
+.O_mine .detail .left{ float: left; width:15%;}
+.O_mine .detail .left .icon_1{ float: left; font-size: 1.5rem; color:forestgreen; margin: 0.4rem 0 0           1.2rem;}
+.O_mine .detail .left .icon_3{ float: left; font-size: 1.5rem; color:#F0AD4E; margin: 0.4rem 0 0           0.9rem;}
+.O_mine .detail .left .icon_4{ float: left; font-size: 1.5rem; color:#8A6DE9; margin: 0.4rem 0 0           1.2rem;}
+.O_mine .detail .left .icon_5{ float: left; font-size: 1.5rem; color:hotpink; margin: 0.4rem 0 0           1rem;}
+.O_mine .detail .left .icon_6{ float: left; font-size: 1.5rem; color:lightsteelblue; margin: 0.4rem 0 0 1rem;}
+.O_mine .detail .left .icon_7{ float: left; font-size: 1.5rem; color:purple; margin: 0.4rem 0 0 1rem;}
+.O_mine .detail .right{ float: left; width:85%; border-bottom:1px solid #F2F2F2;}
+.O_mine .detail .right span{ float: left; font-size: 0.8rem;color:#000;}
+.O_mine .detail .right .icon_2{float: right; margin:0.3rem 1rem 0 0; font-size: 1.5rem; color:#DDDDDD;}
+
+.invalid:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: red;
+    opacity: 1;
+    font-size: 0.8rem;
+}
+.invalid::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: red;
+    opacity: 1;
+    font-size: 0.8rem;
+}
+.invalid:-ms-input-placeholder{
+    color: red;
+    font-size: 0.8rem;
+}
+.invalid::-webkit-input-placeholder {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.isFalse{color:red;}
+.isTrue{font-weight: 900;}

@@ -1,0 +1,93 @@
+<ion-view view-title="宴遇">
+	  <ion-content ng-controller="homepage" ng-class="{homepage:true}">
+					<header>
+						<div ng-class="{top:true}">
+							<div ng-class="{start:true}">{{start}}</div>
+							<div ng-class="{head:true}">{{head}}</div>
+							<div ng-class="{food:true}">{{food}}</div>
+							<img src="../images/homepage/knife.png" />
+						</div>
+						<ul>
+							<li ng-repeat="data in topsrc"><img ng-src={{data.src}}/>
+								<p>{{data.name}}</p>
+							</li>
+						</ul>
+				</header>
+				<div ng-class="{find:true}" >
+					<img src="../images/homepage/findtop.jpg" width="100%"/>
+					<div ng-class="{one:true}" >
+						<div ng-class="{four:true}" ng-repeat="data in foursrc">
+							<p>{{data.name}}</p>
+							<p>{{data.cont}}</p>
+							<img ng-src={{data.src}}/>
+						</div>
+					</div>
+				</div>
+				<div ng-class="{hot:true}">
+					<p >{{hot}}</p>
+						<div ng-class="{circle:true}">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+			<div class="swiper-container" id="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide " ng-repeat="data in hotsrc">
+						<a href="#/homepage/summer/{{data.h61}}/{{data.num}}">
+							<img ng-src={{data.src}}/>
+							<span class={{data.class}}>
+								<h6>{{data.h61}}</h6>
+								<h6>{{data.h62}}</h6>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+				</div>
+	<div ng-class="{like:true}" >
+			<p>{{like}}</p>
+			<div ng-class="{circle:true}">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			<div class="swiper-container" id="swiper1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" ng-repeat="data in likesrc">
+						<img ng-src={{data.src}} >
+						<span class="bg"></span>
+						<span class="txt">{{data.name}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+</ion-content >
+	<ion-footer-bar class="ion-footer-bar">
+			<footer >
+				<img src="../images/homepage/footer12.jpg"/>
+				<p>推荐</p>
+			</footer>
+			<footer >
+					<a href="#/sort">
+				<img src="../images/homepage/footer21.jpg"/>
+				<p>分类</p>
+				</a>
+			</footer>
+			<footer >
+				<img src="../images/homepage/footer31.jpg"/>
+				<p>摇摇乐</p>
+			</footer>
+			<footer >
+				<a href="#/guanzhu">
+					<img src="../images/homepage/footer41.jpg"/>
+					<p>圈圈</p>
+				</a>
+			</footer>
+			<footer >
+			<div ng-click="goMe()">
+				<img src="../images/homepage/footer51.jpg"/>
+				<p>我的</p>
+			</div>
+			</footer>
+	</ion-footer-bar>
+</ion-view>

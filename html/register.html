@@ -1,0 +1,28 @@
+<ion-view view-title="注册" ng-controller="mine">
+	<div ng-class="{O_register:true}">
+		<img ng-src="../images/mine/bg.png" ng-class="{bg:true}"/>
+		<div ng-class="{wrapper:true}">
+			<form name="myForm">
+				<label class="item item-input" ng-class="{ipt1:true}">
+					<i class="icon ion-person placeholder-icon"></i>
+					<input name="user" type="text" ng-model='user' ng-pattern="/^[\u4e00-\u9fa5_a-zA-Z0-9_]{4,20}$/" placeholder="username" required/>
+					<span ng-class="{isFalse:true}" ng-show="myForm.user.$dirty && myForm.user.$invalid">×</span>
+					<span ng-class="{isTrue:true}" ng-show="myForm.user.$dirty && myForm.user.$valid">√</span>
+				</label>
+				<label class="item item-input" ng-class="{ipt:true}">
+					<i class="icon ion-locked placeholder-icon"></i>
+					<input name="password" type="password" placeholder="password" ng-model="psd" ng-pattern="/^[A-Z|0-9|a-z]{6,11}$/" required>
+					<span ng-class="{isFalse:true}" ng-show="myForm.password.$dirty && myForm.password.$invalid">×</span>
+					<span ng-class="{isTrue:true}" ng-show="myForm.password.$dirty && myForm.password.$valid">√</span>
+				</label>
+				<label class="item item-input" ng-class="{ipt:true}">
+					<i class="icon ion-lock-combination placeholder-icon"></i>
+					<input name="Repassword" type="password" placeholder="verify password" ng-model="rpsd" ng-pattern="{{psd}}" required/>
+					<span ng-class="{isFalse:true}" ng-show="myForm.Repassword.$dirty && myForm.Repassword.$invalid">×</span>
+					<span ng-class="{isTrue:true}" ng-show="myForm.Repassword.$dirty && myForm.Repassword.$valid">√</span>
+				</label>
+				<input type="submit" ng-disabled="myForm.$invalid" class="button button-assertive" ng-class="{btn:true}" ng-click="login()" value="Next"/>
+			</form>
+		</div>
+	</div>
+</ion-view>

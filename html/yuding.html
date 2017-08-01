@@ -1,0 +1,103 @@
+<ion-view view-title="研磨时间" >
+  <ion-content class="yuding" ng-controller="yuding" >
+  	<div class="swiper-container" id="yuding">
+		<div class="swiper-wrapper">
+			<div class="pingjia">
+				<img src="../images/yuding/add.png"/>
+				<img src="../images/yuding/add.png"/>
+				<img src="../images/yuding/add.png"/>
+				<img src="../images/yuding/add.png"/>
+				<img src="../images/yuding/add1.png"/></div>
+			<div class="swiper-slide">
+				<img style="width: 100%;height: 12rem; " src="../images/yuding/head.jpg"></img>
+			</div>
+			<div class="swiper-slide">
+					<img style="width: 100%;height: 12rem; " src="../images/yuding/head.jpg"></img>
+			</div>
+			<div class="swiper-slide">
+					<img style="width: 100%;height: 12rem; " src="../images/yuding/head.jpg"></img>
+			</div>
+			<div class="swiper-slide">
+					<img style="width: 100%;height: 12rem; " src="../images/yuding/head.jpg"></img>
+			</div>
+		</div>
+	</div>
+	<div class="middle">
+		<ul>
+			<li><img src="../images/yuding/dingwei.png"/>{{where}}</li>
+			<li><img src="../images/yuding/cake.png"/>{{which}}</li>
+			<li><img src="../images/yuding/qianbao.png"/>{{money}}</li>
+		</ul>
+		<div class="every">每天{{time}}营业<span>有wifi</span></div>
+		<div class="yu" ng-click="yudinga()" id="yu">预订</div>
+		<div class="yus" ng-if="isshow" id="yus"></div>
+		<div class="yuss" ng-if="isshow" id="yuss">
+			<div class="time">
+				<h3>选择到达时间</h3>
+				<span>14:00</span>
+				<span>15:00</span>
+				<span>16:00</span>
+				<span>17:00</span>
+				<span>18:00</span>
+				<span>19:00</span>
+				<span>20:00</span>
+				<span>21:00</span>
+			</div>
+			<div class="people">
+				<h3>选择就餐人数</h3>
+				<span>一人</span>
+				<span>二人</span>
+				<span>三人</span>
+				<span>四人</span>
+				<span>自定</span>
+			</div>
+			<div class="how">
+				<h3>选择点餐方式</h3>
+				<span><input type="radio" name="1">店内套餐</span>
+				<span><input type="radio" name="1">到店自选</span>
+			</div>
+			<h2>联系方式</h2>
+			<h2>给店主留言</h2>
+		</div>
+		<div class="where"><img src="../images/yuding/dingwei.png"/>{{allwhere}}<img src="../images/yuding/right.png" class="right"/></div>
+		<div class="phone"><img src="../images/yuding/phone.png"/>{{phone}}<img src="../images/yuding/right.png" class="right"/></div>
+	</div>
+	<div class="why">
+		<h3><img src="../images/yuding/heart.png"/>推荐理由</h3>
+		<p>{{why}}</p>
+	</div>
+	<div class="caidan">
+		<div class="search"><img src="../images/yuding/search.png"/>查看菜单</div>
+		<div class="all">
+			<div class="one" ng-repeat="data in caidansrc">
+				<img ng-src={{data.src}} class="eone"/>
+				<img src="../images/yuding/pai.png" class="pai"/>
+				<h3>{{data.name}}</h3>
+				<h4>{{data.price}}</h4>
+				<p>
+					<span class="numyu">0</span>
+					<span ng-click="add($index)" >+</span>
+					<span ng-click="less($index)">-</span>
+					<span ng-click="zero($index)"><img src="../images/yuding/cha.png"/></span>
+				</p>
+			</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
+</ion-content>
+	<ion-footer-bar class="ion-footer-bar">
+			<div class="yufooter">
+				<img src="../images/yuding/collect.png"/>
+				<p>收藏</p>
+			</div>
+			<div class="yufooter">
+				<img src="../images/yuding/share.png"/>
+				<p>分享</p>
+			</div>
+			<div class="yufooter">
+				<img src="../images/yuding/pinlun.png"/>
+				<p>评论</p>
+			</div>
+	</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,57 @@
+<ion-view view-title="分类" ng-controller="sort">
+	<div ng-class="{search:true}">
+		<div ng-class="{text:true}">
+			<input type="search" ng-model="val" ng-keyup="search()" placeholder="                开  饭  了  !    !" ng-class="{input:true}"/>
+		</div>
+		<ul ng-class="{src:true}">
+			<li ng-repeat="data in seaList">{{data}}</li>
+		</ul>
+	</div>
+	<ion-content ng-class="{O_sort:true}">
+		<div ng-class="{wrapper:true}">
+			<ul>
+				<li ng-repeat="data in dataList" ng-class="{list1:true}" ng-click="trade($index)">
+						<img ng-src="{{data.src}}" ng-class="{size:true}"/>
+						<p>{{data.name}}</p>
+				</li>
+			</ul>
+			<div ng-class="{right:true}">
+				<ul>
+					<li ng-repeat="data in foodList">
+						<a href="#/homepage/coffee/{{$index}}">
+							<p>{{data.name}}</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</ion-content>
+	<ion-footer-bar class="ion-footer-bar">
+		<footer >
+			<a href="#/homepage">
+				<img src="../images/homepage/footer11.jpg"/>
+				<p>推荐</p>
+			</a>
+		</footer>
+		<footer >
+			<img src="../images/homepage/footer22.jpg"/>
+			<p>分类</p>
+		</footer>
+		<footer >
+			<img src="../images/homepage/footer31.jpg"/>
+			<p>摇摇乐</p>
+		</footer>
+		<footer >
+			<a href="#/guanzhu">
+				<img src="../images/homepage/footer41.jpg"/>
+				<p>圈圈</p>
+			</a>
+		</footer>
+		<footer>
+			<div ng-click="goMe()">
+				<img src="../images/homepage/footer51.jpg"/>
+				<p>我的</p>
+			</div>
+		</footer>
+	</ion-footer-bar>
+</ion-view>
